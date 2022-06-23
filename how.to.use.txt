@@ -1,0 +1,37 @@
+1. Install python 3.10.0, be sure to add python to PATH while installing it
+
+https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe
+
+https://datatofish.com/add-python-to-windows-path/
+
+2. Run install.requirements.bat
+
+3. Open dsnp.cfg with notepad and add your email and password
+
+4. For downloading the subtitles in download.subtitles.bat use
+
+disneyplus.py --nv --na --keep --url https://www.disneyplus.com/es-es/series/loki/6pARMvILBGzF -s 1 -e 1 --slang eng --flang eng
+
+Change eng to the language you need to download the subtitles in.
+
+To download the subtitles in multiple languages use
+
+disneyplus.py --nv --na --keep --url https://www.disneyplus.com/es-es/series/loki/6pARMvILBGzF -s 1 -e 1 --slang eng spa jpn --flang eng
+
+Language codes
+
+https://github.com/Essam23/Disney-Plus-subtitles-downloader/blob/main/pydisney/disneyplus_muxer.py#L105-L190
+
+For downloading the subtitles of all the seasons use
+
+disneyplus.py --nv --na --all-season --keep --url https://www.disneyplus.com/es-es/series/the-mandalorian/3jLIGMDYINqD -s 1 -e 1 --slang eng --flang eng
+disneyplus.py --nv --na --all-season --keep --url https://www.disneyplus.com/es-es/series/the-mandalorian/3jLIGMDYINqD -s 2 -e 1 --slang eng --flang eng
+
+Replace US in these lines with your country code, for example for France replace "region/US" with "region/FR".
+
+https://github.com/Essam23/Disney-Plus-subtitles-downloader/blob/main/pydisney/disneyplus_api.py#L22-L26
+
+If you changed the country IP using a VPN delete the file token.ini before starting to download the subtitles, 
+and change the country code in disneyplus_api.py.
+
+This script may not work with some TV shows.
