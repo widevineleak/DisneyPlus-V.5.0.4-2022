@@ -23,10 +23,10 @@ https://user-images.githubusercontent.com/107879710/175323643-a8689c87-32b7-42f4
 *Wvleaks <wvleaks@proton.me> for Updated version
 
 ## L1 & L3 Private CDMS available 
-Shared l1 starting from 120 euros
-Private L1 starting from 300 euros
+Shared l1 
+Private L1 
 
-*Wvleaks <wvleaks@proton.me> for buying
+*Wvleaks <wvleaks@proton.me> 
 ## Requirements
 
 * [Python](https://python.org/) 3.7 or newer
