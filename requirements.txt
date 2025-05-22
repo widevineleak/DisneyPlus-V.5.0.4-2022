@@ -13,3 +13,8 @@ svtplay_dl==3.7
 titlecase
 tqdm
 Unidecode
+pycryptodome
+pyopenssl
+pyjwt
+cryptography
+requests

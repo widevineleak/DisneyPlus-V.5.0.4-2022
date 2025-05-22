@@ -840,4 +840,3 @@ if __name__ == '__main__':
 			print("looks like you entered wrong disney url movie/show type.")
 			print("url must contain: (disneyplus.com)")
 			sys.exit()
-
