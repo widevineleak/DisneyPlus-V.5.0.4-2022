@@ -1,6 +1,6 @@
 # Vinetrimmer Playready v 1.0
- Playready DRM downloader and decrypter
- works with Disney,AMZN,APPLETV,MAX,NOWTV,HULU,ITUNES,CANAL+,PCOCK,PARAMOUNT & many more
+# Playready DRM downloader and decrypter
+ # works withi Disney,AMZN,APPPLETV,NOWTV,HULU,ITUNES,CANAL+,PCOCK,PARAMOUNT,Max & many more
  
 
 
