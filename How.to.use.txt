@@ -1,0 +1,149 @@
+1. Install python 3.8.xx - 3.13.xx, be sure to add python to PATH while installing it.
+
+2. Install Microsoft Visual C++ Redistributable.
+
+https://aka.ms/vs/17/release/vc_redist.x64.exe
+
+3. Run install.bat.
+
+4. For Netflix go to the folder vinetrimmer and add your email and password of Netflix in vinetrimmer\vinetrimmer.yml (open the file with Notepad++), you do not need adding your credentials for Amazon, Peacock, and Hulu, just the cookies file, the cookies file name will always be default.txt.
+
+5. Install this Firefox add-on
+
+https://addons.mozilla.org/en-US/firefox/addon/cookies-txt-one-click/
+
+for Chrome install this extension
+
+https://chrome.google.com/webstore/detail/open-cookiestxt/gdocmgbfkjnnpapoeobnolbbkoibbcif
+
+and go to netflix.com and download the cookies, rename the file to default.txt and put it in
+
+vinetrimmer\Cookies\Netflix
+
+For Amazon go to primevideo.com and download the cookies, rename the file to default.txt and put it in
+
+vinetrimmer\Cookies\Amazon
+
+For Peacock go to peacocktv.com and download the cookies, rename the file to default.txt and put it in
+
+vinetrimmer\Cookies\Peacock
+
+For Hulu go to https://www.hulu.com and download the cookies, rename the file to default.txt and put it in
+
+vinetrimmer\Cookies\Hulu
+
+6. For Netflix you will need to add the esn in Netflix.yml which is in the folder vinetrimmer\config\services
+use the examples from the file Netflix.yml from the folder example_configs to understand how to add the correct esn.
+
+7. For downloading the video of an episode from Netflix use
+
+poetry run vt dl -al en -sl en -w S01E1 Netflix 80189685
+
+The script does not support decrypting the videos with MAIN or HIGH profiles in 1080p or 720p (only MAIN profile in 480p and HIGH profile in 540p will get decrypted) using cdm l3, you will need cdm l1 for MAIN or HIGH 1080p and 720p.
+ 
+If you want to downlod the video for a specific seasons or all the seasons use
+
+poetry run vt dl -al en -sl en -w S01 Netflix 80189685
+
+poetry run vt dl -al en -sl en -w S01,S03 Netflix 80189685
+
+poetry run vt dl -al en -sl en -w S01-S05 Netflix 80189685
+
+To download the video of a movie use
+
+poetry run vt dl -al en -sl en Netflix 81252357
+
+To download multiple audio languages use
+
+poetry run vt dl -al en,es,fr -sl en Netflix 81252357
+
+To downlaod all the audio languages use
+
+poetry run vt dl -al all -sl en Netflix 81252357
+
+If you did not choose a language for the audio the script will download the original audio language, and if you did not choose a language for the subtitles the script will download all the available subtitles.
+
+8. For downloading the video of an episode from primevideo.com use
+
+poetry run vt dl -al en -sl en -w S01E1 Amazon -vq SD https://www.primevideo.com/region/eu/detail/0KRGHGZCHKS920ZQGY5LBRF7MA/
+
+The script supports only downloading the videos in SD with cdm l3.
+ 
+If you want to downlod the video for a specific seasons use
+
+poetry run vt dl -al en -sl en -w S01 Amazon -vq SD https://www.primevideo.com/region/eu/detail/0KRGHGZCHKS920ZQGY5LBRF7MA/
+
+9. For downloading the video of an episode from Peacock use
+
+poetry run vt dl -al en -w S01E1 Peacock https://www.peacocktv.com/watch/asset/tv/yellowstone/7034893369976297112
+
+For downloading the video of a movie from Peacock use
+
+poetry run vt dl Peacock -m https://www.peacocktv.com/watch/asset/movies/john-wick/a698e22c-3e32-35cc-9a0c-981b90402fc2
+
+10. For downloading a movie from DisneyPlus use (cdm l3 is 720p only)
+
+poetry run vt dl -q 720 DisneyPlus -m https://www.disneyplus.com/en-gb/browse/entity-3d00a2de-821a-4844-ad90-2f9e7b685b95
+
+11. For downloading the video of a movie from Hulu use
+
+poetry run vt dl Hulu -m https://www.hulu.com/movie/ce42e744-f65d-4d46-9324-80aec621fc87
+
+12. For downloading a movie from ParamountPlus use
+
+poetry run vt dl ParamountPlus -m https://www.paramountplus.com/movies/video/7juDj4xQPZG1xtvD0pDPRQWgv1Vj6xox/
+
+For downloading an episode from ParamountPlus use
+
+poetry run vt dl -w S01E1 ParamountPlus https://www.paramountplus.com/shows/1883/
+
+13. For AppleTVPlus you need to use the correct value of 'sf' in the file vinetrimmer\config\services\appletvplus.yml for the country of your account, you can get it from this file
+
+https://gist.githubusercontent.com/BrychanOdlum/2208578ba151d1d7c4edeeda15b4e9b1/raw/8f01e4a4cb02cf97a48aba4665286b0e8de14b8e/storefrontmappings.json
+
+and for the iTunes script add the correct value of 'sf' in vinetrimmer\services\itunes.py
+
+14. For Skyshowtime add the country code of the account in \vinetrimmer\config\services\skyshowtime.yml in territory and activeterritory
+
+for more options use
+
+poetry run vt dl -h
+
+for the extra options in the scripts use
+
+poetry run vt dl Hulu -h
+
+instead of Hulu add the service name
+
+the extra options will be added after the service name
+
+To use your cdm l3 in the folder vinetrimmer\devices create a new folder for the cdm l3 and copy the files device_private_key and device_client_id_blob to it like vinetrimmer\devices\generic_4464_l3 and create a new text file and rename it to wv.json and in the file wv.json add something like
+
+{
+"name": "generic_4464_l3",
+"description": "android generic 4464 l3",
+"security_level": 3,
+"session_id_type": "android",
+"private_key_available": "True",
+"vmp": "False",
+"send_key_control_nonce": "True"
+}
+
+change the name and the description to match the cdm l3 you have.
+
+for cdm l1 use 
+
+"security_level": 1,
+
+open the file vinetrimmer\vinetrimmer.yml with Notepad++ and add your cdm l3 name like this
+
+cdm:
+  default: 'generic_4464_l3'
+
+
+
+
+
+
+
+

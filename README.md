@@ -3,25 +3,11 @@
  
  
 
-https://user-images.githubusercontent.com/107879710/175323497-43c46b1c-abf9-452f-96c6-0021b076597d.mp4
-
-
-https://user-images.githubusercontent.com/107879710/175323543-e46f47ee-5f4f-456a-8ec9-2e85aed15e36.mp4
-
-
-
-https://user-images.githubusercontent.com/107879710/175323598-b34e9938-b73c-4831-90da-74556c71ca42.mp4
-
-
-
-https://user-images.githubusercontent.com/107879710/175323643-a8689c87-32b7-42f4-9c87-ba51f2493ce8.mp4
-
 
 
 ## Contact
 
 *Wvleaks <wvleaks@proton.me> for Updated version
-
 ## L1 & L3 Private CDMS available 
 Shared l1 
 Private L1 

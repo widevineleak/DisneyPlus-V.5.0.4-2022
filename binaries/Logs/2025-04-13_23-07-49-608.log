@@ -1,0 +1,9 @@
+﻿LOG 2025/04/13
+Save Path: D:\VT-0.1.0.PR4K\binaries\Logs
+Task Start: 2025/04/13 23:07:49
+Task CommandLine: D:\VT-0.1.0.PR4K\binaries\N_m3u8DL-RE.EXE https://avodsls3ww-s.akamaihd.net/ondemand/iad_2/a8d3/6dbe/eb59/407d-9309-e3bc792fa48e/42e676d7-425d-4037-ba10-f83b98ae3db3.ism/manifest --save-dir D:\VT-0.1.0.PR4K\temp --save-name VideoTrack_58656a737a635ab6396c2a91c04f7835_enc --write-meta-json False --log-level ERROR --thread-count 32 --ffmpeg-binary-path D:\VT-0.1.0.PR4K\binaries\ffmpeg.EXE -sv res='1600*':codec='hvc1':for=best -da all -ds all
+
+23:07:49.610 EXTRA: ffmpeg => D:\VT-0.1.0.PR4K\binaries\ffmpeg.EXE
+23:07:54.446 EXTRA: DropAudioFilter => For: all
+23:07:54.446 EXTRA: DropSubtitleFilter => For: all
+23:07:54.446 EXTRA: VideoFilter => ResolutionReg: 1600* For: best

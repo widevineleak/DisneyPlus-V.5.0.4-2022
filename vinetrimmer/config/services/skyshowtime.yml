@@ -1,0 +1,26 @@
+endpoints:
+  config: 'https://config.clients.skyshowtime.com/GLOBAL/{provider}/{proposition}/{platform}/PROD/{version}/config.json'
+  tokens: 'https://ovp.skyshowtime.com/auth/tokens'
+  me: 'https://ovp.skyshowtime.com/auth/users/me'
+  node: 'https://atom.skyshowtime.com/adapter-calypso/v3/query/node/'
+  vod: 'https://ovp.skyshowtime.com/video/playouts/vod'
+
+client:
+  version: '4.1.10'
+  config_version: '4.1.11'
+  territory: 'RO'
+  activeterritory: 'RO'
+  language: 'en-US'
+  provider: 'SKYSHOWTIME'
+  proposition: 'SKYSHOWTIME'
+  platform: 'ANDROID'
+  device: 'MOBILE'
+  id: 'Ptudy2gGV4nNa9nUyFbl'
+  drm_device_id: 'UNKNOWN'
+  client_sdk: 'SKYSHOWTIME-ANDROID-v1'
+  auth_scheme: 'MESSO'
+  auth_issuer: 'NOWTV'
+
+security:
+  signature_hmac_key_v4: 'jfj9qGg6aDHaBbFpH6wNEvN6cHuHtZVppHRvBgZs'
+  signature_format: 'SkyOTT client="{client}",signature="{signature}",timestamp="{timestamp}",version="1.0"'

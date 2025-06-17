@@ -1,0 +1,5 @@
+user_agent: 'ATVE/6.2.0 Android/10 build/6A226 maker/Google model/Chromecast FW/QTS2.200918.0337115981'  # AppleTV6,2/11.1 | ATVE/1.1 FireOS/6.2.6.8 build/4A93 maker/Amazon model/FireTVStick4K FW/NS6268/2315
+user_agent_browser: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+
+endpoints:
+  license: 'https://play.itunes.apple.com/WebObjects/MZPlay.woa/wa/fpsRequest'
