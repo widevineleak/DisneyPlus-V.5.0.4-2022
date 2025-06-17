@@ -1,18 +1,18 @@
-# DisneyPlus V.5.0.4 2022
- DRM Tool to download DRM Videos
- 
+# Vinetrimmer Playready v 1.0
+ Playready DRM downloader and decrypter
+ works with Disney,AMZN,APPLETV,MAX,NOWTV,HULU,ITUNES,CANAL+,PCOCK,PARAMOUNT & many more
  
 
 
 
 ## Contact
 
-*Wvleaks <wvleaks@proton.me> for Updated version
+*Playreadydrm <Playreadydrm@proton.me> for Any Queries
 ## L1 & L3 Private CDMS available 
 Shared l1 
 Private L1 
 
-*Wvleaks <wvleaks@proton.me> 
+*Playreadydrm <Playreadydrm@proton.me> 
 ## Requirements
 
 * [Python](https://python.org/) 3.7 or newer
