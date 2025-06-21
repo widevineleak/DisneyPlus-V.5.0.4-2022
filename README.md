@@ -2,6 +2,10 @@
 
 Playready DRM downloader and decrypter works with Disney,AMZN,APPPLETV,NOWTV,HULU,ITUNES,CANAL+,PCOCK,PARAMOUNT,Max & many more
 
+
+# 🎬 Why made public
+
+Microsoft Playready drm is now fully exposed and this is causing big companies loss we leaked it so it can be patched by microsoft & the respect streaming partners
 ## Contact
 
 *Playreadydrm <Playreadydrm@proton.me> for Any Queries
